@@ -1,0 +1,109 @@
+.container{
+    display: grid;
+    width:800px;
+    height:700px;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 0.3fr 1fr 100px;
+    grid-template-areas: 
+    "o1 o1"
+    "o2 o3"
+    "e o3"
+    "o4 o4";
+    gap:10px;
+    background-color: rgb(30, 30, 30);
+    padding: 10px;
+    margin: 20px auto;
+}
+.o1,.o2,.o4{
+    background: rgb(93, 180, 58);
+background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(49,103,209,1) 0%, rgba(78,8,95,1) 66%);
+
+display: grid;
+justify-content: center;
+align-items: center;
+color:white;
+font-size: 1.2rem;
+}
+/* .e{
+    grid-area: e;
+    background-color: rgb(30, 30, 30);
+} */
+.o1{
+    grid-area: o1;
+
+}
+.o2{
+    grid-area: o2;
+}
+.o3{
+    grid-area: o3;
+    background: rgb(58, 152, 180);
+background: linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(49,103,209,1) 0%, rgba(78,8,95,1) 66%);
+text-align: center;
+
+display: grid;
+padding:10px;
+gap:10px;
+justify-content: center;
+color:white;
+font-size: 1.2rem;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: repeat(5,1fr);
+grid-template-areas: 
+"t3 t3 t3 t3"
+"i1 i1 i2 i3"
+"i4 i8 i2 i7"
+"i5 i5 i9 i10"
+"i6 i6 i6 i10";
+
+}
+.t3{
+    grid-area: t3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o4{
+    grid-area: o4;
+}
+
+.i1,.i2,.i3,.i4,.i5,.i6,.i7,.i8,.i9,.i10{
+    background-color: #fff;
+    color: #000;
+    font-size: 1.2rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.i1{
+    grid-area: i1;
+    
+
+}
+.i2{
+    grid-area: i2;
+}
+.i3{
+    grid-area: i3;
+}
+.i4{
+    grid-area: i4;
+}
+.i5{
+    grid-area: i5;
+}
+.i6{
+    grid-area: i6;
+}
+.i7{
+    grid-area: i7;
+}
+.i8{
+    grid-area: i8;
+}
+.i9{
+    grid-area: i9;
+}
+.i10{
+    grid-area: i10;
+}
